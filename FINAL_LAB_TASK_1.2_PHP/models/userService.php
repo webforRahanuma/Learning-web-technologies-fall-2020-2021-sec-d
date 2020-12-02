@@ -72,5 +72,29 @@
 			return false;
 		}
 	}
+	function updateUsers($id){
+
+		$conn = getConnection();
+		
+		$id = $_POST['id'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$type = $_POST['type'];
+
+	$sql ="update employee set username='$username', password='$password', email='$email', type='$type' WHERE id='$id'";
+	$result = mysqli_query($conn, $sql);
+		
+
+		 
+		$status = mysqli_query($conn, $sql);
+		if($status){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+
 
 ?>
