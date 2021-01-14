@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    align-items: center;
+    background: #4f9c06;
+     
+    justify-content: center;
+    
+}
+
+td{
+    align-items: center;
+   font-size: 20px;
+     
+    justify-content: center;
+    
+}
